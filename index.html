@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLIND - Space Horror Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-logo">BLIND</div>
+    <div class="loading-bar-container">
+      <div class="loading-bar"></div>
+    </div>
+    <div class="loading-text">INITIALIZING...</div>
+  </div>
+
+  <!-- Jumpscare Element -->
+  <div class="jumpscare">
+    <img src="/api/placeholder/800/600" alt="jumpscare" class="jumpscare-img">
+    <audio id="jumpscare-sound" src=""></audio>
+  </div>
+
+  <!-- Static Overlay -->
+  <div class="static-overlay"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">BLIND</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">HOME</a></li>
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#features" class="nav-link">FEATURES</a></li>
+        <li><a href="#gallery" class="nav-link">GALLERY</a></li>
+        <li><a href="#preorder" class="nav-link">PRE-ORDER</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="stars"></div>
+    <div class="hero-parallax parallax-1"></div>
+    <div class="hero-parallax parallax-2"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">BLIND</h1>
+      <p class="hero-subtitle">FEAR WHAT YOU CANNOT SEE</p>
+      <a href="#preorder" class="cta-button" id="trailer-button">WATCH TRAILER</a>
+    </div>
+    <video id="trailer-video" class="trailer-video" muted>
+      <source src="" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">ABOUT THE GAME</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>THE STORY</h3>
+          <p>After a mysterious incident aboard the deep space research vessel "Erebus," you awaken in darkness. The ship's AI has gone silent. The crew is missing. And something else is on board.</p>
+          <p>Your eyes damaged in the incident, you must navigate using only sound and other senses to escape the horror that hunts you.</p>
+        </div>
+        <div class="about-card">
+          <h3>GAMEPLAY</h3>
+          <p>BLIND is an immersive first-person horror experience that challenges you to survive without sight. Use audio cues, vibrations, and limited echolocation to navigate a hostile environment.</p>
+          <p>With each sound you make, the entity draws closer. Silence becomes your greatest asset—and your greatest obstacle.</p>
+        </div>
+        <div class="about-card">
+          <h3>THE EXPERIENCE</h3>
+          <p>BLIND pushes the boundaries of sensory horror gaming with its revolutionary audio design and haptic feedback systems.</p>
+          <p>Each playthrough is unique as the ship's layout and threat locations dynamically change, creating a new experience of terror every time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section-title">FEATURES</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <div class="feature-icon">🔊</div>
+          <div class="feature-content">
+            <h3>SOUND-BASED NAVIGATION</h3>
+            <p>Explore using a groundbreaking 3D audio system that lets you perceive your environment through sound.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">👁️</div>
+          <div class="feature-content">
+            <h3>ECHOLOCATION MECHANICS</h3>
+            <p>Employ limited echolocation abilities to briefly "see" your surroundings, but be warned—each pulse alerts the entity to your position.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🧠</div>
+          <div class="feature-content">
+            <h3>ADAPTIVE AI</h3>
+            <p>Face an intelligent entity that learns from your behaviors and adapts its hunting strategies accordingly.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🚀</div>
+          <div class="feature-content">
+            <h3>DYNAMIC ENVIRONMENTS</h3>
+            <p>Navigate a spacecraft that changes with each playthrough, ensuring no two experiences are the same.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2 class="section-title">GALLERY</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="/api/placeholder/400/300" alt="BLIND gameplay">
+        </div>
+        <div class="gallery-item">
+          <img src="/api/placeholder/400/300" alt="Ship corridor">
+        </div>
+        <div class="gallery-item">
+          <img src="/api/placeholder/400/300" alt="The entity">
+        </div>
+        <div class="gallery-item">
+          <img src="/api/placeholder/400/300" alt="Control room">
+        </div>
+        <div class="gallery-item">
+          <img src="/api/placeholder/400/300" alt="Audio interface">
+        </div>
+        <div class="gallery-item">
+          <img src="/api/placeholder/400/300" alt="Escape pod">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preorder Section -->
+  <section id="preorder" class="preorder">
+    <div class="container">
+      <h2 class="section-title">PRE-ORDER NOW</h2>
+      <div class="countdown">
+        <div class="countdown-item">
+          <span id="days">00</span>
+          <span>DAYS</span>
+        </div>
+        <div class="countdown-item">
+          <span id="hours">00</span>
+          <span>HOURS</span>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes">00</span>
+          <span>MINUTES</span>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds">00</span>
+          <span>SECONDS</span>
+        </div>
+      </div>
+      <div class="editions">
+        <div class="edition">
+          <h3>STANDARD EDITION</h3>
+          <p class="price">$39.99</p>
+          <ul>
+            <li>Base Game</li>
+            <li>Digital Soundtrack</li>
+            <li>Exclusive Wallpaper</li>
+          </ul>
+          <button class="cta-button preorder-btn">PRE-ORDER</button>
+        </div>
+        <div class="edition featured">
+          <h3>DELUXE EDITION</h3>
+          <p class="price">$59.99</p>
+          <ul>
+            <li>Base Game</li>
+            <li>Digital Soundtrack</li>
+            <li>Art Book</li>
+            <li>48-Hour Early Access</li>
+            <li>Exclusive Character Skin</li>
+          </ul>
+          <button class="cta-button preorder-btn">PRE-ORDER</button>
+        </div>
+        <div class="edition">
+          <h3>COLLECTOR'S EDITION</h3>
+          <p class="price">$99.99</p>
+          <ul>
+            <li>Base Game</li>
+            <li>Digital Soundtrack</li>
+            <li>Art Book</li>
+            <li>72-Hour Early Access</li>
+            <li>Exclusive Character Skin</li>
+            <li>Physical Statue</li>
+            <li>Steel Book Case</li>
+          </ul>
+          <button class="cta-button preorder-btn">PRE-ORDER</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>JOIN THE VOID</h2>
+      <p>Subscribe to our newsletter for exclusive updates and content</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="cta-button">SUBSCRIBE</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">BLIND</div>
+        <div class="social-links">
+          <a href="#" class="social-link">TWITTER</a>
+          <a href="#" class="social-link">INSTAGRAM</a>
+          <a href="#" class="social-link">DISCORD</a>
+          <a href="#" class="social-link">YOUTUBE</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 BLIND. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
